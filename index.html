@@ -1,0 +1,272 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="An Ghrúdlann">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>An Ghrúdlann</title>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/anghrudlann.png">
+    <meta name="theme-color" content="#3f51b5">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="An Ghrúdlann">
+    <link rel="apple-touch-icon-precomposed" href="logo.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="logo.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <!-- Windows phone -->
+    <meta name="msapplication-navbutton-color" content="#3f51b5">
+
+    <link rel="shortcut icon" type="image/png" sizes="192x192" href="logo.png">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css" />
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <style>
+    .alignleft {
+      float:left;
+    }
+    .alignright {
+      float:right;
+    }
+    table, th, td {
+      border: 1px solid grey;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+    }
+    a {
+    text-decoration: none;
+    }
+    #add {
+      transition: 0.4s ease all;
+      -webkit-transition: 0.4s ease all;
+    }
+    #add:hover {
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+    }
+    #link-button {
+      transition: 1.0s ease all;
+      -webkit-transition: 1.0s ease all;
+    }
+    #link-button:hover {
+      transform: scale(1.5) rotate(360deg);
+      -webkit-transform: scale(1.5) rotate(360deg);
+    }
+    box-shadow: -3px -3px 10px rgba(0, 0, 0, .25);
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  </head>
+
+  <body class="mdl-demo mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row"></div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+          <h3>An Ghrúdlann</h3>
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row"></div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+          <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+            <li class="mdl-menu__item">An Ghrúdlann</li>
+          </ul>
+          <a href="#beers" class="mdl-layout__tab is-active">Beers</a>
+        </div>
+      </header>
+
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="beers">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card__supporting-text mdl-color-text--grey-800">
+              <p>
+                <img src="images/anghrudlann.png" style="height:300px" align="center" hspace="250" />
+              </p>
+            </div>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-800">
+              <h3>Up Next</h3>
+              <ul>
+                <li> Bundeskommunikationskommissioner Dunkles Weißbier<i> (Dunkles Weißbier)</i></li>
+                <li> Engadiner Nußtorte <i> (English Brown Ale)</i></li>
+                <li> For killing the thirst and for easing the gout, there's nothing at all beats a pint of good stout <i>(Irish Dry Stout)</i></li>
+                <li> Liam Sutcliffe's Bomb<i> (Nelson Dry-Hopped Pale Ale)</i></li>
+                <li> Coirm Fraoigh<i> (Heather-bittered red ale)</i></li>
+                <li> Zwetschgendatschi <i>(Berliner Weiße with plums)</i></li>
+              </ul>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--white -100 mdl-color-text--white">
+              <img src="images/hefeweizen-logo.png" style="width:200px;height:200;" align="center"></a>
+            </header>
+          <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>Isoamyl Acetate 4-Vinyl Guaiacol</h4>
+                <b>Brew Date:</b> 2017-08-28<br>
+                <b>Style:</b> Weißbier<br>
+                <b>ABV:</b> 4.6%<br>
+                <b>IBU:</b> 15<br>
+                <a target="_blank" href="https://untappd.com/b/an-ghrudlann-the-production-function-for-an-ghrudlann-f-x-r-satisfies-f-ax-af-x-for-a-1/2256658" id="link-button"
+                  <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--accent">
+                  <i class="mdi mdi-untappd"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--white -100 mdl-color-text--white">
+              <img src="images/irs-saison-logo.png" style="width:200px;height:200;" align="center"></a>
+            </header>
+          <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>The production function for An Ghrúdlann f :X→ℝ₊ satisfies f(αx)> αf(x), for α>1</h4>
+                <b>Brew Date:</b> 2017-08-01<br>
+                <b>Style:</b> Saison<br>
+                <b>ABV:</b> 5%<br>
+                <b>IBU:</b> 40<br>
+                <a target="_blank" href="https://untappd.com/b/an-ghrudlann-the-production-function-for-an-ghrudlann-f-x-r-satisfies-f-ax-af-x-for-a-1/2256658" id="link-button"
+                  <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--accent">
+                  <i class="mdi mdi-untappd"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <p><img src="images/irs-saison-tasting.jpg" style="width:600px;" hspace="120px"></p>
+            <br>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--white -100 mdl-color-text--white">
+              <img src="images/irs-citra-saison-logo.png" style="width:200px;height:200;" align="center">
+            </header>
+          <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>The production function for An Ghrúdlann f :X→ℝ₊ satisfies f(αx)> αf(x), for α>1 - Dry Hopped with Citra</h4>
+                <b>Brew Date:</b> 2017-08-01<br>
+                <b>Style:</b> Saison<br>
+                <b>ABV:</b> 5%<br>
+                <b>IBU:</b> 40<br>
+                <a target="_blank" href="https://untappd.com/b/an-ghrudlann-the-production-function-for-an-ghrudlann-f-x-r-satisfies-f-ax-af-x-for-a-1-dry-hopped-with-citra/2256665" id="link-button"
+                  <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--accent">
+                  <i class="mdi mdi-untappd"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <p><img src="images/irs-citra-saison-tasting.jpg" style="width:600px;" hspace="120px"></p>
+            <br>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--white -100 mdl-color-text--white">
+              <img src="images/stochastic-saison-logo.png" style="width:200px;height:200;" align="center"></a>
+            </header>
+          <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>Stochastic Saison</h4>
+                <b>Brew Date:</b> 2017-07-08<br>
+                <b>Style:</b> Saison<br>
+                <b>ABV:</b> 10.2%<br>
+                <b>IBU:</b> 33<br>
+                <a target="_blank" href="https://untappd.com/b/an-ghrudlann-stochastic-saison-july-2017/2213807" id="link-button"
+                  <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--accent">
+                  <i class="mdi mdi-untappd"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <p><img src="images/stochastic-saison-tasting.jpg" style="width:600px;" hspace="120px"></p>
+            <br>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--white -100 mdl-color-text--white">
+              <img src="images/banks-street-2-logo.png" style="width:200px;height:200;" align="center">
+            </header>
+          <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>Galaxy Dry Hopped Banks Street (July 2017)</h4>
+                <b>Brew Date:</b> 2017-06-22<br>
+                <b>Style:</b> NEPA<br>
+                <b>ABV:</b> 6.7%<br>
+                <b>IBU:</b> 53<br>
+                <a target="_blank" href="https://untappd.com/b/an-ghrudlann-galaxy-dry-hopped-banks-street-july-2017/2185827" id="link-button"
+                  <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--accent">
+                  <i class="mdi mdi-untappd"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <p><img src="images/banks-street-2-tasting.jpg" style="width:600px" hspace="120px"></p>
+            <br>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--white -100 mdl-color-text--white">
+              <img src="images/banks-street-1-logo.png" style="width:200px;height:200;" align="center"></a>
+            </header>
+          <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>Galaxy Dry Hopped Banks Street (June 2017)</h4>
+                <b>Brew Date:</b> 2017-06-06<br>
+                <b>Style:</b> NETIPA<br>
+                <b>ABV:</b> 11.5%<br>
+                <b>IBU:</b> 32<br>
+                <a target="_blank" href="https://untappd.com/b/an-ghrudlann-galaxy-dry-hopped-banks-street-june-2017/2153694" id="link-button"
+                  <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--accent">
+                  <i class="mdi mdi-untappd"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <p><img src="images/banks-street-1-tasting.jpg" style="width:600px;" hspace="120px"></p>
+            <br>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--white -100 mdl-color-text--white">
+              <img src="images/renaissance-red-logo.png" style="width:200px;height:200;" align="center">
+            </header>
+            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>Renaissance Red</h4>
+                <b>Brew Date:</b> 2017-05-27<br>
+                <b>Style:</b> Red IPA<br>
+                <b>ABV:</b> 4%<br>
+                <b>IBU:</b> 80<br>
+                <a target="_blank" href="https://untappd.com/b/an-ghrudlann-renaissance-red-june-2017/2119700" id="link-button"<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--accent"><i class="mdi mdi-untappd"></i></button></a>
+              </div>
+            </div>
+            <p><img src="images/renaissance-red-tasting.jpg" style="width:400px;" hspace="230px"></p>
+            <br>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
