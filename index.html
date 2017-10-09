@@ -89,6 +89,21 @@
 
   </head>
   <style>
+    .an-ghrudlann.mdl-card {
+      width: 285px;
+      height: 285px;
+      background: url("images/an-ghrudlann.jpg") center / cover;
+    }
+    .an-ghrudlann > .mdl-card__actions {
+      height: 52px;
+      padding: 16px;
+      background: rgba(0, 0, 0, 0.2);
+    }
+    .an-ghrudlann__filename{
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+    }
     .renaissance-red-logo.mdl-card {
       width: 285px;
       height: 285px;
@@ -230,11 +245,11 @@
       <main class="mdl-layout__content">
         <div class="mdl-layout__tab-panel is-active" id="beers">
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card__supporting-text mdl-color-text--grey-800">
-              <p>
-                <img src="images/an-ghrudlann.jpg" style="height:300px" align="center" hspace="250" />
-              </p>
-            </div>
+            <div class="mdl-layout-spacer"></div>
+              <div class="an-ghrudlann mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand"></div>
+              </div>
+            <div class="mdl-layout-spacer"></div>
             <div class="mdl-card__supporting-text mdl-color-text--grey-800">
               <h3>Up Next</h3>
               <ul>
@@ -247,7 +262,6 @@
             </div>
           </section>
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-layout-spacer"></div>
               <div class="renaissance-red-logo mdl-card mdl-shadow--2dp">
                 <div class="mdl-card__title mdl-card--expand"></div>
               </div>
@@ -272,7 +286,6 @@
               <div class="bundeskommunikationskommissioner-logo mdl-card mdl-shadow--2dp">
                 <div class="mdl-card__title mdl-card--expand"></div>
               </div>
-            <div class="mdl-layout-spacer"></div>
           </section>
         </div>
       </main>
